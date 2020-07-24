@@ -12,6 +12,11 @@ class ProductController {
   // GET tools
   async index() {
     const products = await Products.all();
+    if (!products) {
+      return response
+        .status(404)
+        .send({ message: "Nemhum registro encontrado" });
+    }
     return products;
   }
   //POST tools
@@ -29,27 +34,45 @@ class ProductController {
   }
 
   // GET tools/:id
-  async show({ params }) {
+  async show({ params, response }) {
     const products = await Products.findOrFail(params.id);
-
+    if (!products) {
+      return response
+        .status(404)
+        .send({ message: "Nemhum registro encontrado" });
+    }
     return products;
   }
 
   //PUT or PATCH tools/:id
 
-  // async update({ params, request }) {
-  //   const tool = Tools.findOrFail(params.id);
-  //   const toolUpdate = request.all();
+  async update({ params, request, response }) {
+    const products = await Products.findOrFail(params.id);
+    const { codigo, nome, price_c, price_v, und } = request.all();
+    if (!products) {
+      return response
+        .status(404)
+        .send({ message: "Nemhum registro encontrado" });
+    }
 
-  //   tool.merge({toolUpdate});
-  //   await tool.save();
+    products.codigo = codigo;
+    products.nome = nome;
+    products.price_c = price_c;
+    products.price_v = price_v;
+    products.und = und;
 
-  //   return tool;
-  // }
+    await products.save();
+    return products;
+  }
 
   // DELETE tools/:id
-  async destroy({ params }) {
+  async destroy({ params, response }) {
     const products = await Products.findOrFail(params.id);
+    if (!products) {
+      return response
+        .status(404)
+        .send({ message: "Nemhum registro encontrado" });
+    }
     await products.delete();
   }
 }

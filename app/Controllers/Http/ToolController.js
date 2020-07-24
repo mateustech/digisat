@@ -10,8 +10,13 @@
 const Tools = use("App/Models/Tool");
 class ToolController {
   // GET tools
-  async index() {
+  async index({ response }) {
     const tools = await Tools.all();
+    if (!tools) {
+      return response
+        .status(404)
+        .send({ message: "Nemhum registro encontrado" });
+    }
     return tools;
   }
 
@@ -24,27 +29,41 @@ class ToolController {
   }
 
   // GET tools/:id
-  async show({ params }) {
+  async show({ params, response }) {
     const tool = await Tools.findOrFail(params.id);
-
+    if (!tool) {
+      return response
+        .status(404)
+        .send({ message: "Nemhum registro encontrado" });
+    }
     return tool;
   }
 
   //PUT or PATCH tools/:id
 
-  // async update({ params, request }) {
-  //   const tool = Tools.findOrFail(params.id);
-  //   const toolUpdate = request.all();
+  async update({ params, request ,response }) {
+    const tool = await Tools.findOrFail(params.id);
+    const { name, marca } = request.all();
+    if (!tool) {
+      return response
+        .status(404)
+        .send({ message: "Nemhum registro encontrado" });
+    }
+    tool.name = name
+    tool.marca = marca
+    await tool.save();
 
-  //   tool.merge({toolUpdate});
-  //   await tool.save();
-
-  //   return tool;
-  // }
+    return tool;
+  }
 
   // DELETE tools/:id
-  async destroy({ params }) {
+  async destroy({ params, response }) {
     const tool = await Tools.findOrFail(params.id);
+    if (!tool) {
+      return response
+        .status(404)
+        .send({ message: "Nemhum registro encontrado" });
+    }
     await tool.delete();
   }
 }
