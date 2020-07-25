@@ -26,3 +26,7 @@ Route.group(()=> {
 Route.group(()=> {
   Route.resource('service', 'ServiceController').apiOnly()
 }).middleware('auth')
+
+Route.group(()=> {
+  Route.resource('client', 'ClientController').apiOnly()
+}).middleware('auth')

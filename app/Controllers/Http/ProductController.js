@@ -9,7 +9,7 @@
  */
 const Products = use("App/Models/Product");
 class ProductController {
-  // GET tools
+ 
   async index() {
     const products = await Products.all();
     if (!products) {
@@ -19,7 +19,7 @@ class ProductController {
     }
     return products;
   }
-  //POST tools
+
   async store({ request }) {
     const data = request.only([
       "codigo",
@@ -33,7 +33,7 @@ class ProductController {
     return products;
   }
 
-  // GET tools/:id
+ 
   async show({ params, response }) {
     const products = await Products.findOrFail(params.id);
     if (!products) {
@@ -43,8 +43,6 @@ class ProductController {
     }
     return products;
   }
-
-  //PUT or PATCH tools/:id
 
   async update({ params, request, response }) {
     const products = await Products.findOrFail(params.id);
@@ -65,7 +63,6 @@ class ProductController {
     return products;
   }
 
-  // DELETE tools/:id
   async destroy({ params, response }) {
     const products = await Products.findOrFail(params.id);
     if (!products) {
