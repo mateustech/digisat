@@ -1,5 +1,7 @@
 "use strict";
 
+const { ClientBase } = require("pg");
+
 /** @typedef {import('@adonisjs/framework/src/Request')} Request */
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
 /** @typedef {import('@adonisjs/framework/src/View')} View */
@@ -29,7 +31,11 @@ class ClientController {
       );
       adress = adress[0];
       var obj = {
-        client: clientsJSON[0],
+        id: clientsJSON[index].id,
+        name: clientsJSON[index].name,
+        cpf: clientsJSON[index].cpf,
+        apelido: clientsJSON[index].apelido,
+        contato: clientsJSON[index].contato,
         adress: adress,
       };
       arrayClients.push(obj);
@@ -38,14 +44,34 @@ class ClientController {
   }
 
   async store({ request }) {
-    const data = request.only(["name", "cpf", "apelido", "contato"]);
-    var adress = request.only(["adress"]); // pegando adress do body
-    var clients = await Client.create(data);
-    adress.adress.client_id = await clients.id; //pegando id do usuario
-    const adressSaved = await Adress.create(adress.adress);
+    try {
+      const errorMessage = {
+        "name.required": "Esse campo é obrigatório.",
+        "cpf.unique": "Esse campo ja existe.",
+        "cpf.min": "Minino 11 caracteres.",
+        "contato.required": "Esse campo é obrigatório.",
+      };
+      const validation = await validateAll(
+        request.all(),
+        {
+          name: "required",
+          contato: "required|unique:clients",
+          cpf: "unique:clients|min:11",
+        },
+        errorMessage
+      );
+      if (validation.fails()) {
+        return response.status(401).send({ message: validation.messages() });
+      }
+      const data = request.only(["name", "cpf", "apelido", "contato"]);
+      var adress = request.only(["adress"]); // pegando adress do body
+      var clients = await Client.create(data);
+      adress.adress.client_id = await clients.id; //pegando id do usuario
+      const adressSaved = await Adress.create(adress.adress);
 
-    clients.adress = adressSaved;
-    return clients;
+      clients.adress = adressSaved;
+      return clients;
+    } catch (error) {}
   }
 
   async show({ params, response }) {
@@ -62,7 +88,11 @@ class ClientController {
     );
     adress = adress[0];
     var objClient = {
-      client: clientJSON,
+      id: clientJSON.id,
+      name: clientJSON.name,
+      cpf: clientJSON.cpf,
+      apelido: clientJSON.apelido,
+      contato: clientJSON.contato,
       adress: adress,
     };
     return objClient;
@@ -71,6 +101,7 @@ class ClientController {
   async update({ params, request, response }) {
     const clients = await Client.findOrFail(params.id);
     const { name, cpf, apelido, contato } = request.all();
+    
     if (!clients) {
       return response
         .status(404)
@@ -88,12 +119,20 @@ class ClientController {
 
   async destroy({ params, response }) {
     const clients = await Client.findOrFail(params.id);
+    var clientJSON = clients.toJSON();
+    var adress = await Database.table("adresses").where(
+      "client_id",
+      clientJSON.id
+    );
     if (!clients) {
       return response
         .status(404)
         .send({ message: "Nemhum registro encontrado" });
     }
-    await clients.delete();
+    await clients.delete(); //deleted client
+    await adress.delete(); //deleted adress
+
+    //? Ver com igor a questão de deletar Clientes, se vai deixar registrado os endereços e/ou OS's.
   }
 }
 
