@@ -36,12 +36,13 @@ class AuthController {
       const errorMessage = {
         "email.required": "Esse campo é obrigatório.",
         "password.required": "Esse campo é obrigatório.",
+        "password.min": "Minino 6 caracteres.",
       };
       const validation = await validateAll(
         request.all(),
         {
           email: "required",
-          password: "required",
+          password: "required|min:6",
         },
         errorMessage
       );

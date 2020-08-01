@@ -4,62 +4,87 @@
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
 /** @typedef {import('@adonisjs/framework/src/View')} View */
 
-/**
- * Resourceful controller for interacting with services
- */
+const { validateAll } = use("Validator");
 const Services = use("App/Models/Service");
 class ServiceController {
-  async index({response}) {
-    const services = await Services.all();
-    if (!services) {
-      return response
-        .status(404)
-        .send({ message: "Nemhum registro encontrado" });
+  async index({ response }) {
+    try {
+      const services = await Services.all();
+      return services;
+    } catch (error) {
+      return response.status(404).send({ error: `Erro: Services not exists` });
     }
-    return services;
   }
-
   //POST service
-  async store({ request }) {
-    const data = request.all();
-    const service = await Services.create(data);
+  async store({ request, response }) {
+    try {
+      const errorMessage = {
+        "name.required": "Esse campo é obrigatório.",
+      };
+      const validation = await validateAll(
+        request.all(),
+        {
+          name: "required",
+        },
+        errorMessage
+      );
+      if (validation.fails()) {
+        return response.status(400).send({ message: validation.messages() });
+      }
+      const data = request.all();
+      const service = await Services.create(data);
 
-    return service;
+      return service;
+    } catch (error) {
+      return response.status(404).send({ error: `Erro: ${err.message}` });
+    }
   }
-
   // GET service/:id
   async show({ params, response }) {
-    const service = await Services.findOrFail(params.id);
-    if (!service) {
-      return response
-        .status(404)
-        .send({ message: "Nemhum registro encontrado" });
+    try {
+      const service = await Services.findOrFail(params.id);
+      return service;
+    } catch (error) {
+      return response.status(404).send({ error: `Erro: Service not exists` });
     }
-    return service;
   }
 
   //PUT or PATCH service/:id
 
-  async update({ params, request ,response }) {
-    const service = await Services.findOrFail(params.id);
-    const { name } = request.all();
-    if (!service) {
-      return response
-        .status(404)
-        .send({ message: "Nemhum registro encontrado" });
+  async update({ params, request, response }) {
+    try {
+      const service = await Services.findOrFail(params.id);
+      try {
+        const errorMessage = {
+          "name.required": "Esse campo é obrigatório.",
+        };
+        const validation = await validateAll(
+          request.all(),
+          {
+            name: "required",
+          },
+          errorMessage
+        );
+        if (validation.fails()) {
+          return response.status(400).send({ message: validation.messages() });
+        }
+        const { name } = request.all();
+        service.name = name;
+        await service.save();
+        return service;
+      } catch (error) {}
+    } catch (error) {
+      return response.status(404).send({ error: `Erro: Service not exists` });
     }
-
-    service.name = name;
-
-    await service.save();
-
-    return service;
   }
-
   // DELETE service/:id
-  async destroy({ params }) {
-    const service = await Services.findOrFail(params.id);
-    await service.delete();
+  async destroy({ params, response }) {
+    try {
+      const service = await Services.findOrFail(params.id);
+      await service.delete();
+    } catch (error) {
+      return response.status(404).send({ error: `Erro: Service not exists` });
+    }
   }
 }
 

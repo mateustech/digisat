@@ -4,67 +4,91 @@
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
 /** @typedef {import('@adonisjs/framework/src/View')} View */
 
-/**
- * Resourceful controller for interacting with tools
- */
+const { validateAll } = use("Validator");
 const Tools = use("App/Models/Tool");
 class ToolController {
   // GET tools
   async index({ response }) {
-    const tools = await Tools.all();
-    if (!tools) {
-      return response
-        .status(404)
-        .send({ message: "Nemhum registro encontrado" });
+    try {
+      const tools = await Tools.all();
+      return tools;
+    } catch (error) {
+      return response.status(404).send({ error: `Erro: Tools not exists` });
     }
-    return tools;
   }
 
   //POST tools
-  async store({ request }) {
-    const data = request.only(["name", "marca"]);
-    const tool = await Tools.create(data);
+  async store({ request, response }) {
+    try {
+      const errorMessage = {
+        "name.required": "Esse campo é obrigatório.",
+      };
+      const validation = await validateAll(
+        request.all(),
+        {
+          name: "required",
+        },
+        errorMessage
+      );
+      if (validation.fails()) {
+        return response.status(400).send({ message: validation.messages() });
+      }
+      const data = request.only(["name", "marca"]);
+      const tool = await Tools.create(data);
 
-    return tool;
+      return tool;
+    } catch (error) {
+      return response.status(404).send({ error: `Erro: ${err.message}` });
+    }
   }
-
   // GET tools/:id
   async show({ params, response }) {
-    const tool = await Tools.findOrFail(params.id);
-    if (!tool) {
-      return response
-        .status(404)
-        .send({ message: "Nemhum registro encontrado" });
+    try {
+      const tool = await Tools.findOrFail(params.id);
+      return tool;
+    } catch (error) {
+      return response.status(404).send({ error: `Erro: Tool not exists` });
     }
-    return tool;
   }
-
   //PUT or PATCH tools/:id
+  async update({ params, request, response }) {
+    try {
+      const tool = await Tools.findOrFail(params.id);
+      try {
+        const errorMessage = {
+          "name.required": "Esse campo é obrigatório.",
+        };
+        const validation = await validateAll(
+          request.all(),
+          {
+            name: "required",
+          },
+          errorMessage
+        );
+        if (validation.fails()) {
+          return response.status(400).send({ message: validation.messages() });
+        }
+        const { name, marca } = request.all();
+        tool.name = name;
+        tool.marca = marca;
+        await tool.save();
 
-  async update({ params, request ,response }) {
-    const tool = await Tools.findOrFail(params.id);
-    const { name, marca } = request.all();
-    if (!tool) {
-      return response
-        .status(404)
-        .send({ message: "Nemhum registro encontrado" });
+        return tool;
+      } catch (error) {
+        return response.status(400).send({ error: `Erro: ${err.message}` });
+      }
+    } catch (error) {
+      return response.status(404).send({ error: `Erro: Tool not exists` });
     }
-    tool.name = name
-    tool.marca = marca
-    await tool.save();
-
-    return tool;
   }
-
   // DELETE tools/:id
   async destroy({ params, response }) {
-    const tool = await Tools.findOrFail(params.id);
-    if (!tool) {
-      return response
-        .status(404)
-        .send({ message: "Nemhum registro encontrado" });
+    try {
+      const tool = await Tools.findOrFail(params.id);
+      await tool.delete();
+    } catch (error) {
+      return response.status(404).send({ error: `Erro: Tool not exists` });
     }
-    await tool.delete();
   }
 }
 

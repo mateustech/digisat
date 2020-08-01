@@ -4,7 +4,7 @@
 const Route = use("Route");
 
 Route.get("/", () => {
-  return { greeting: "Hello world in JSON" };
+  return { message: "Hello, Api running sucessFull." };
 });
 
 //usuarios do admin
