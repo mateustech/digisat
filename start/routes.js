@@ -30,3 +30,11 @@ Route.group(()=> {
 Route.group(()=> {
   Route.resource('client', 'ClientController').apiOnly()
 }).middleware('auth')
+
+Route.group(()=> {
+  Route.resource('colaborator', 'CollaboratorController').apiOnly()
+}).middleware('auth')
+
+Route.group(()=> {
+  Route.resource('ordens_service', 'OrdensServiceController').apiOnly()
+}).middleware('auth')

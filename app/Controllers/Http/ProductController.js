@@ -1,9 +1,5 @@
 "use strict";
 
-/** @typedef {import('@adonisjs/framework/src/Request')} Request */
-/** @typedef {import('@adonisjs/framework/src/Response')} Response */
-/** @typedef {import('@adonisjs/framework/src/View')} View */
-
 const { validateAll } = use("Validator");
 const Products = use("App/Models/Product");
 class ProductController {
@@ -45,7 +41,7 @@ class ProductController {
 
       return products;
     } catch (error) {
-      return response.status(404).send({ error: `Erro: ${err.message}` });
+      return response.status(404).send({ error: `Erro: Not is possibled` });
     }
   }
   async show({ params, response }) {

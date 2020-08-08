@@ -2,10 +2,6 @@
 
 const { ClientBase } = require("pg");
 
-/** @typedef {import('@adonisjs/framework/src/Request')} Request */
-/** @typedef {import('@adonisjs/framework/src/Response')} Response */
-/** @typedef {import('@adonisjs/framework/src/View')} View */
-
 const { validateAll } = use("Validator");
 const Client = use("App/Models/Client");
 const Adress = use("App/Models/Adress");
@@ -68,7 +64,7 @@ class ClientController {
       clients.adress = adressSaved;
       return clients;
     } catch (error) {
-      return response.status(404).send({ error: `Erro: ${err.message}` });
+      return response.status(404).send({ error: `Erro: Not is possibled` });
     }
   }
 
