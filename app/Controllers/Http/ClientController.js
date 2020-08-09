@@ -147,14 +147,14 @@ class ClientController {
   async destroy({ params, response }) {
     try {
       const clients = await Client.findOrFail(params.id);
-      var clientJSON = clients.toJSON();
-      var adress = await Database.table("adresses").where(
-        "client_id",
-        clientJSON.id
-      );
+      // var clientJSON = clients.toJSON();
+      // var adress = await Database.table("adresses").where(
+      //   "client_id",
+      //   clientJSON.id
+      // );
       await clients.delete(); //deleted client
-      await adress.delete(); //deleted adress
-
+      //await adress.delete(); //deleted adress
+      return response.status(200).send({ sucess: `Deleted Sucess` });
       //? Ver com igor a questão de deletar Clientes, se vai deixar registrado os endereços e/ou OS's.
     } catch (error) {
       return response.status(404).send({ error: `Erro: Client not exists` });
