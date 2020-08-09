@@ -66,6 +66,7 @@ class OrdensServiceController {
     try {
       const ordensServices = await OrdensServices.findOrFail(params.id);
       await ordensServices.delete();
+      return response.status(200).send({ sucess: `Deleted Sucess` });
     } catch (error) {
       return response.status(404).send({ error: `Erro: OS not exists` });
     }

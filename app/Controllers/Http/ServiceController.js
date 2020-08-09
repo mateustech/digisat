@@ -78,6 +78,7 @@ class ServiceController {
     try {
       const service = await Services.findOrFail(params.id);
       await service.delete();
+      return response.status(200).send({ sucess: `Deleted Sucess` });
     } catch (error) {
       return response.status(404).send({ error: `Erro: Service not exists` });
     }

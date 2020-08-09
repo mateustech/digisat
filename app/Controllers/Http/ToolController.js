@@ -82,6 +82,7 @@ class ToolController {
     try {
       const tool = await Tools.findOrFail(params.id);
       await tool.delete();
+      return response.status(200).send({ sucess: `Deleted Sucess` });
     } catch (error) {
       return response.status(404).send({ error: `Erro: Tool not exists` });
     }

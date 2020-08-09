@@ -163,7 +163,9 @@ class CollaboratorController {
         return colaborator;
       } catch (error) {}
     } catch (error) {
-      return response.status(404).send({ error: `Erro: Colaborator not exists` });
+      return response
+        .status(404)
+        .send({ error: `Erro: Colaborator not exists` });
     }
   }
   async destroy({ params, response }) {
@@ -179,6 +181,7 @@ class CollaboratorController {
 
       const colaborator = await Collaborator.findOrFail(params.id);
       await colaborator.delete();
+      return response.status(200).send({ sucess: `Deleted Sucess` });
     } catch (error) {
       return response
         .status(404)

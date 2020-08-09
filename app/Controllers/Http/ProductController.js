@@ -92,6 +92,7 @@ class ProductController {
     try {
       const products = await Products.findOrFail(params.id);
       await products.delete();
+      return response.status(200).send({ sucess: `Deleted Sucess` });
     } catch (error) {
       return response.status(404).send({ error: `Erro: Product not exists` });
     }
