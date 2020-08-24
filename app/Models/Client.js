@@ -4,6 +4,9 @@
 const Model = use('Model')
 
 class Client extends Model {
+    adresses(){
+        return this.hasMany('App/Models/Adress')
+    }
 }
 
 module.exports = Client

@@ -67,25 +67,12 @@ class ClientController {
       return response.status(404).send({ error: `Erro: Not is possibled` });
     }
   }
-
   async show({ params, response }) {
     try {
-      const clients = await Client.findOrFail(params.id);
-      var clientJSON = clients.toJSON();
-      var adress = await Database.table("adresses").where(
-        "client_id",
-        clientJSON.id
-      );
-      adress = adress[0];
-      var objClient = {
-        id: clientJSON.id,
-        name: clientJSON.name,
-        cpf: clientJSON.cpf,
-        apelido: clientJSON.apelido,
-        contato: clientJSON.contato,
-        adress: adress,
-      };
-      return objClient;
+      var clients = await Client.findOrFail(params.id);
+      const adress = await clients.adresses().fetch();
+      clients.adress = adress;
+      return clients;
     } catch (error) {
       return response.status(404).send({ error: `Erro: Client not exists` });
     }

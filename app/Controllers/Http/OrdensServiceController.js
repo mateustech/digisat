@@ -1,12 +1,32 @@
 "use strict";
 const { validateAll } = use("Validator");
 const OrdensServices = use("App/Models/OrdensService");
-
+const Database = use("Database");
 class OrdensServiceController {
   async index({ request, response }) {
     try {
-      const ordensServices = await OrdensServices.all();
-      return ordensServices;
+      var ordensServices = await OrdensServices.all();
+      var osJSON = ordensServices.toJSON();
+      var arrayOS = [];
+      for (let index = 0; index < osJSON.length; index++) {
+        var service = await Database.table("services").where(
+          "id",
+          osJSON[index].service_id
+        );
+        service = service[0];
+        var obj = {
+          id: osJSON[index].id,
+          client_id: osJSON[index].client_id,
+          colaborator_id: osJSON[index].colaborator_id,
+          adress_id: osJSON[index].adress_id,
+          service: service,
+          data: osJSON[index].data,
+          hora: osJSON[index].hora,
+          tempo: osJSON[index].tempo,
+        };
+        arrayOS.push(obj);
+      }
+      return arrayOS;
     } catch (error) {
       return response.status(404).send({ error: `Erro: OS's not exists` });
     }
