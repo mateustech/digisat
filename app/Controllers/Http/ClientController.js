@@ -38,8 +38,8 @@ class ClientController {
     try {
       const errorMessage = {
         "name.required": "Esse campo é obrigatório.",
-        "cpf.unique": "Esse campo ja existe.",
-        "cpf.min": "Minino 11 caracteres.",
+        // "cpf.unique": "Esse campo ja existe.",
+        // "cpf.min": "Minino 11 caracteres.",
         "contato.required": "Esse campo é obrigatório.",
         "contato.min": "Minino 11 caracteres.",
       };
@@ -48,7 +48,7 @@ class ClientController {
         {
           name: "required",
           contato: "required|min:11",
-          cpf: "unique:clients|min:11",
+          // cpf: "unique:clients|min:11",
         },
         errorMessage
       );

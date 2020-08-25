@@ -63,6 +63,9 @@ class OrdensServiceController {
         return response.status(401).send({ message: validation.messages() });
       }
       const data = request.all();
+      console.log(data.service.id);
+
+      return [];
       const obj = {
         client_id: data.client_id,
         colaborator_id: data.colaborator_id,
