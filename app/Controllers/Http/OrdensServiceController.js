@@ -14,16 +14,28 @@ class OrdensServiceController {
           "id",
           osJSON[index].client_id
         );
-        client = client[0];
+        var colaborator = await Database.table("collaborators").where(
+          "id",
+          osJSON[index].colaborator_id
+        );
+        var service = await Database.table("services").where(
+          "id",
+          osJSON[index].service_id
+        );
+        var adress = await Database.table("adresses").where(
+          "id",
+          osJSON[index].adress_id
+        );
         var obj = {
           id: osJSON[index].id,
-          client: client,
-          colaborator_id: osJSON[index].colaborator_id,
-          adress_id: osJSON[index].adress_id,
-          service: osJSON[index].service_id,
+          client: client[0],
+          colaborator: colaborator[0],
+          service: service[0],
+          adress: adress[0],
           data: osJSON[index].data,
           hora: osJSON[index].hora,
           tempo: osJSON[index].tempo,
+          obs: osJSON[index].obs
         };
         arrayOS.push(obj);
       }
