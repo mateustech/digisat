@@ -2,6 +2,7 @@
 const { validateAll } = use("Validator");
 const OrdensServices = use("App/Models/OrdensService");
 const Database = use("Database");
+//desfazendo merda
 class OrdensServiceController {
   async index({ request, response }) {
     try {
