@@ -83,7 +83,7 @@ class ClientController {
       try {
         const errorMessage = {
           "name.required": "Esse campo é obrigatório.",
-          "cpf.min": "Minino 11 caracteres.",
+          // "cpf.min": "Minino 11 caracteres.",
           "contato.required": "Esse campo é obrigatório.",
           "contato.min": "Minino 11 caracteres.",
         };
@@ -108,11 +108,11 @@ class ClientController {
         await clients.save();
 
         //updating adress
-        var clientJSON = clients.toJSON();
-        const adressCadastrado = await Database.table("adresses").where(
-          "client_id",
-          clientJSON.id
-        );
+        // var clientJSON = clients.toJSON();
+        // const adressCadastrado = await Database.table("adresses").where(
+        //   "client_id",
+        //   clientJSON.id
+        // );
         // adressCadastrado.cep = adress.cep;
         // adressCadastrado.longradouro = adress.longradouro;
         // adressCadastrado.complemento = adress.complemento;
