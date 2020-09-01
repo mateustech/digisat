@@ -107,24 +107,6 @@ class ClientController {
         clients.contato = contato;
         await clients.save();
 
-        //updating adress
-        // var clientJSON = clients.toJSON();
-        // const adressCadastrado = await Database.table("adresses").where(
-        //   "client_id",
-        //   clientJSON.id
-        // );
-        // adressCadastrado.cep = adress.cep;
-        // adressCadastrado.longradouro = adress.longradouro;
-        // adressCadastrado.complemento = adress.complemento;
-        // adressCadastrado.numero = adress.numero;
-        // adressCadastrado.pont_ref = adress.pont_ref;
-        // adressCadastrado.bairro = adress.bairro;
-        // adressCadastrado.cidade = adress.cidade;
-        // adressCadastrado.estado = adress.estado;
-        // adressCadastrado.lat = adress.lat;
-        // adressCadastrado.long = adress.long;
-        // adressCadastrado.zone = adress.zone;
-        // await adressCadastrado.save()
         return clients;
       } catch (error) {}
     } catch (error) {
