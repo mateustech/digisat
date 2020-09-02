@@ -23,8 +23,8 @@ class OrdensServiceController {
           osJSON[index].service_id
         );
         var adress = await Database.table("adresses").where(
-          "id",
-          osJSON[index].adress_id
+          "client_id",
+          osJSON[index].client_id
         );
         var obj = {
           id: osJSON[index].id,
