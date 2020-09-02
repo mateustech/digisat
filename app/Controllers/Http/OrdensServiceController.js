@@ -35,7 +35,7 @@ class OrdensServiceController {
           data: osJSON[index].data,
           hora: osJSON[index].hora,
           tempo: osJSON[index].tempo,
-          obs: osJSON[index].obs
+          obs: osJSON[index].obs,
         };
         arrayOS.push(obj);
       }
@@ -96,7 +96,48 @@ class OrdensServiceController {
     }
   }
 
-  async update({ params, request, response }) {}
+  async update({ params, request, response }) {
+    try {
+      const ordensServices = await OrdensServices.findOrFail(params.id);
+      const errorMessage = {
+        "client_id.required": "Esse campo é obrigatório.",
+        "colaborator_id.required": "Esse campo é obrigatório.",
+        "adress_id.required": "Esse campo é obrigatório.",
+        "data.required": "Esse campo é obrigatório.",
+        "hora.required": "Esse campo é obrigatório.",
+      };
+      const validation = await validateAll(
+        request.all(),
+        {
+          client_id: "required",
+          colaborator_id: "required",
+          adress_id: "required",
+          data: "required",
+          hora: "required",
+        },
+        errorMessage
+      );
+      if (validation.fails()) {
+        return response.status(401).send({ message: validation.messages() });
+      }
+      //updating OS
+      const { client_id, colaborator_id, adress_id, service, data , hora , tempo , obs } = request.all();
+      ordensServices.client_id = client_id;
+      ordensServices.colaborator_id = colaborator_id;
+      ordensServices.adress_id = adress_id;
+      ordensServices.service_id = service.id;
+      ordensServices.data = data;
+      ordensServices.hora = hora;
+      ordensServices.tempo = tempo;
+      ordensServices.obs = obs;
+     
+      await ordensServices.save();
+
+      return ordensServices;
+    } catch (error) {
+      return response.status(404).send({ error: `Erro: Client not exists` });
+    }
+  }
 
   async destroy({ params, request, response }) {
     try {
