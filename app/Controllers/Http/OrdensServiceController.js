@@ -79,6 +79,7 @@ class OrdensServiceController {
       return response.status(404).send({ error: `Erro: OS not exists` });
     }
   }
+  //update gitlab
   async store({ request, response }) {
     try {
       const errorMessage = {
