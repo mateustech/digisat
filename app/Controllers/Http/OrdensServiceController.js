@@ -47,7 +47,34 @@ class OrdensServiceController {
   async show({ params, response }) {
     try {
       const ordensServices = await OrdensServices.findOrFail(params.id);
-      return ordensServices;
+      var client = await Database.table("clients").where(
+        "id",
+        ordensServices.client_id
+      );
+      var colaborator = await Database.table("collaborators").where(
+        "id",
+        ordensServices.colaborator_id
+      );
+      var service = await Database.table("services").where(
+        "id",
+        ordensServices.service_id
+      );
+      var adress = await Database.table("adresses").where(
+        "client_id",
+        ordensServices.client_id
+      );
+      var obj = {
+        id: ordensServices.id,
+        client: client[0],
+        colaborator: colaborator[0],
+        service: service[0],
+        adress: adress[0],
+        data: ordensServices.data,
+        hora: ordensServices.hora,
+        tempo: ordensServices.tempo,
+        obs: ordensServices.obs,
+      };
+      return obj;
     } catch (error) {
       return response.status(404).send({ error: `Erro: OS not exists` });
     }
@@ -121,7 +148,16 @@ class OrdensServiceController {
         return response.status(401).send({ message: validation.messages() });
       }
       //updating OS
-      const { client_id, colaborator_id, adress_id, service, data , hora , tempo , obs } = request.all();
+      const {
+        client_id,
+        colaborator_id,
+        adress_id,
+        service,
+        data,
+        hora,
+        tempo,
+        obs,
+      } = request.all();
       ordensServices.client_id = client_id;
       ordensServices.colaborator_id = colaborator_id;
       ordensServices.adress_id = adress_id;
@@ -130,7 +166,7 @@ class OrdensServiceController {
       ordensServices.hora = hora;
       ordensServices.tempo = tempo;
       ordensServices.obs = obs;
-     
+
       await ordensServices.save();
 
       return ordensServices;
