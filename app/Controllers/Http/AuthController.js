@@ -2,6 +2,25 @@
 const User = use("App/Models/User");
 const { validateAll } = use("Validator");
 class AuthController {
+  /**
+   * @swagger
+   * /api/hello:
+   *   get:
+   *     tags:
+   *       - Test
+   *     summary: Sample API
+   *     parameters:
+   *       - name: name
+   *         description: Name of the user
+   *         in: query
+   *         required: false
+   *         type: string
+   *     responses:
+   *       200:
+   *         description: Send hello message
+   *         example:
+   *           message: Hello Guess
+   */
   async register({ request, response }) {
     try {
       const errorMessage = {
@@ -31,7 +50,7 @@ class AuthController {
       return response.status(500).send({ error: `Erro: ${err.message}` });
     }
   }
-  async authenticate({ request,response, auth }) {
+  async authenticate({ request, response, auth }) {
     try {
       const errorMessage = {
         "email.required": "Esse campo é obrigatório.",
