@@ -11,6 +11,7 @@ const DATABASE_URL = new Url(Env.get("DATABASE_URL"));
 
 module.exports = {
   /*
+  mais um comentario
   |--------------------------------------------------------------------------
   | Default Connection
   |--------------------------------------------------------------------------
