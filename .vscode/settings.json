@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/f112df59-9dfa-456f-af42-4d32ece1a738/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/digisat-api",
+    "appService.deploySubpath": "."
+}

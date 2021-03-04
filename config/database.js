@@ -10,17 +10,17 @@ const Url = require("url-parse");
 const DATABASE_URL = new Url(Env.get("DATABASE_URL"));
 
 module.exports = {
-  connection: Env.get(DATABASE_URL.DB_CONNECTION, "pg"),
+  connection: "pg",
 
   //comentario
   pg: {
     client: "pg",
     connection: {
-      host: Env.get("DB_HOST", DATABASE_URL.hostname),
-      port: Env.get("DB_PORT", DATABASE_URL.port),
-      user: Env.get("DB_USER", DATABASE_URL.username),
-      password: Env.get("DB_PASSWORD", DATABASE_URL.password),
-      database: Env.get("DB_DATABASE", DATABASE_URL.DB_DATABASE),
+      host: Env.get("DB_HOST", POSTGRES_DBHOST),
+      port: Env.get("DB_PORT", POSTGRES_DBPORT),
+      user: Env.get("DB_USER", POSTGRES_DBUSER),
+      password: Env.get("DB_PASSWORD", POSTGRES_DBPASS),
+      database: Env.get("DB_DATABASE", POSTGRES_DBNAME),
     },
     debug: Env.get("DB_DEBUG", false),
   },
