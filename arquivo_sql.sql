@@ -216,7 +216,6 @@ CREATE TABLE public.ordens_services (
     hora character varying(255),
     tempo character varying(255),
     obs character varying(255),
-    status character varying(255),
     created_at timestamp with time zone,
     updated_at timestamp with time zone
 );
@@ -983,7 +982,7 @@ COPY public.collaborators (id, name, cpf, rg, contato, password, cargo, created_
 -- Data for Name: ordens_services; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.ordens_services (id, client_id, colaborator_id, adress_id, service_id, data, hora, tempo, obs, status, created_at, updated_at) FROM stdin;
+COPY public.ordens_services (id, client_id, colaborator_id, adress_id, service_id, data, hora, tempo, obs, created_at, updated_at) FROM stdin;
 1	2	1	2	10	01/09/2020	15:30	30	NAO ESTA ABRINDO A FECHADURA	2021-03-22 01:59:39+00	2021-03-22 01:59:39+00
 2	3	2	3	1	02/09/2020	16:30	30	FAZER ACESSO REMOTO NO CELULAR DA ESPOSA DE MOACIR É ENSINAR A VER A GRAVAÇÃO NO DVR. 	2021-03-22 01:59:39+00	2021-03-22 01:59:39+00
 3	54	3	54	5	06/10/2020	14:00	30	INSTALAR MULTIPONTO	2021-03-22 01:59:39+00	2021-03-22 01:59:39+00
