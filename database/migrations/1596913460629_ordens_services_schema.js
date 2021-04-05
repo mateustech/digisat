@@ -40,6 +40,7 @@ class OrdensServicesSchema extends Schema {
       table.string("hora");
       table.string("tempo");
       table.string("obs");
+      table.string("status")
       table.timestamps();
     });
   }

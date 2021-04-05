@@ -36,6 +36,7 @@ class OrdensServiceController {
           hora: osJSON[index].hora,
           tempo: osJSON[index].tempo,
           obs: osJSON[index].obs,
+          status: osJSON[index].status,
         };
         arrayOS.push(obj);
       }
@@ -73,6 +74,7 @@ class OrdensServiceController {
         hora: ordensServices.hora,
         tempo: ordensServices.tempo,
         obs: ordensServices.obs,
+        status: ordemServices.status,
       };
       return obj;
     } catch (error) {
@@ -116,6 +118,7 @@ class OrdensServiceController {
         hora: data.hora,
         tempo: data.tempo,
         obs: data.obs,
+        status: data.status,
       };
       const ordensServices = await OrdensServices.create(obj);
       return ordensServices;
@@ -123,7 +126,15 @@ class OrdensServiceController {
       return response.status(404).send({ error: `Erro: Not is possibled` });
     }
   }
-
+  async update_status({ params, request, response }) {
+    const { status } = request.all();
+    const ordensServices = await OrdensServices.findOrFail(params.id);
+    if (status == "executed" || status == "pending" || status == "canceled") {
+      ordensServices.status = status;
+      ordensServices.save();
+    }
+    return ordensServices;
+  }
   async update({ params, request, response }) {
     try {
       const ordensServices = await OrdensServices.findOrFail(params.id);

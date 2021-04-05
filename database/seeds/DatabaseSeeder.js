@@ -3809,6 +3809,7 @@ class DatabaseSeeder {
         hora: "15:30",
         tempo: "30",
         obs: "NAO ESTA ABRINDO A FECHADURA",
+        status: "executed",
       },
       {
         client_id: 3,
@@ -3820,6 +3821,7 @@ class DatabaseSeeder {
         tempo: "30",
         obs:
           "FAZER ACESSO REMOTO NO CELULAR DA ESPOSA DE MOACIR É ENSINAR A VER A GRAVAÇÃO NO DVR. ",
+        status: "executed",
       },
       {
         client_id: 54,
@@ -3830,6 +3832,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "INSTALAR MULTIPONTO",
+        status: "executed",
       },
       {
         client_id: 55,
@@ -3840,6 +3843,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "INSTALAR SKY PRE PAGO",
+        status: "executed",
       },
       {
         client_id: 56,
@@ -3851,6 +3855,7 @@ class DatabaseSeeder {
         tempo: "30",
         obs:
           "15 CAMERAS, ESTAO TODAS PARADAS, LEVAR FONTE, FIO, CONECTOR. FAZER ACESSO REMOTO. DVR PROTEC. ",
+        status: "executed",
       },
       {
         client_id: 57,
@@ -3861,6 +3866,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "TERMINAR CERCA ELETRICA ",
+        status: "executed",
       },
       {
         client_id: 1,
@@ -3871,6 +3877,7 @@ class DatabaseSeeder {
         hora: "07:30",
         tempo: "30",
         obs: "INSTALACAO DE UM VIDEO PORTEIRO INTELBRAS COM FECHO ELETRONICO",
+        status: "executed",
       },
       {
         client_id: 4,
@@ -3882,6 +3889,7 @@ class DatabaseSeeder {
         tempo: "30",
         obs:
           "AJUSTAR O PORTAO PARA INSTALAR MOTOR, PORTAO ESTA PEGANDO NO TRILHO. ",
+        status: "executed",
       },
       {
         client_id: 1,
@@ -3892,6 +3900,7 @@ class DatabaseSeeder {
         hora: "13:30",
         tempo: "30",
         obs: "CAMERA ESTA CHUVISCANDO A NOITE ",
+        status: "executed",
       },
       {
         client_id: 15,
@@ -3902,6 +3911,7 @@ class DatabaseSeeder {
         hora: "15:00",
         tempo: "30",
         obs: "UMA CAMERA PARADA",
+        status: "executed",
       },
       {
         client_id: 14,
@@ -3912,6 +3922,7 @@ class DatabaseSeeder {
         hora: "08:00",
         tempo: "30",
         obs: "ATUALIZAR GOSAT PLUS",
+        status: "executed",
       },
       {
         client_id: 16,
@@ -3923,6 +3934,7 @@ class DatabaseSeeder {
         tempo: "30",
         obs:
           "MOTOR DZ NANO DA ROSSI. CREMALHEIRA BATEU NO MOTOR E O MOTOR PAROU DE FUNCIONAR. LEVAR CREMALHEIRA, CAPACITOR E PLACA ROSSI. ",
+        status: "executed",
       },
       {
         client_id: 17,
@@ -3933,6 +3945,7 @@ class DatabaseSeeder {
         hora: "08:00",
         tempo: "30",
         obs: "KIT DVR 04 CANAIS COM 02 CAMERAS BULLET 30METROS. ",
+        status: "executed",
       },
       {
         client_id: 18,
@@ -3943,6 +3956,7 @@ class DatabaseSeeder {
         hora: "08:00",
         tempo: "30",
         obs: "SINAL BAIXO NO MIDIA BOX, ANTENA DIGIMASTER 1,30MT ",
+        status: "executed",
       },
       {
         client_id: 19,
@@ -3953,6 +3967,7 @@ class DatabaseSeeder {
         hora: "09:30",
         tempo: "30",
         obs: "INSTALAR 2 RAMAIS DE VIDEO PORTEIRO",
+        status: "executed",
       },
       {
         client_id: 20,
@@ -3963,6 +3978,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "ORCAMENTO CAMERAS EM MAJOR SALES",
+        status: "executed",
       },
       {
         client_id: 22,
@@ -3973,6 +3989,7 @@ class DatabaseSeeder {
         hora: "14:30",
         tempo: "30",
         obs: "FAZER ORCAMENTO DE INSTALACAO E MANUTENCAO DE SISTEMA DE CFTV",
+        status: "executed",
       },
       {
         client_id: 22,
@@ -3983,6 +4000,7 @@ class DatabaseSeeder {
         hora: "14:30",
         tempo: "30",
         obs: "OLHAR TOMADA DE ENERGIA",
+        status: "executed",
       },
       {
         client_id: 7,
@@ -3993,6 +4011,7 @@ class DatabaseSeeder {
         hora: "13:30",
         tempo: "30",
         obs: "CAMERAS ESTAO FALHANDO. ",
+        status: "executed",
       },
       {
         client_id: 28,
@@ -4003,6 +4022,7 @@ class DatabaseSeeder {
         hora: "14:30",
         tempo: "30",
         obs: "RECEPTOR MÍDIA BOX B3.\n\nIMAGEM CONGELANDO. ",
+        status: "executed",
       },
       {
         client_id: 24,
@@ -4013,6 +4033,7 @@ class DatabaseSeeder {
         hora: "14:30",
         tempo: "30",
         obs: "LIGAR O MOTOR DE DENTRO, NA FAZENDA NOVA. ",
+        status: "executed",
       },
       {
         client_id: 30,
@@ -4023,6 +4044,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "ACESSO REMOTO",
+        status: "executed",
       },
       {
         client_id: 32,
@@ -4033,6 +4055,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "CONFIGURA CAMERA MINI SPEED DOME IP",
+        status: "executed",
       },
       {
         client_id: 31,
@@ -4043,6 +4066,7 @@ class DatabaseSeeder {
         hora: "15:30",
         tempo: "30",
         obs: "ACESSO REMOTO NO PC - DVR ZIRION",
+        status: "executed",
       },
       {
         client_id: 34,
@@ -4053,6 +4077,7 @@ class DatabaseSeeder {
         hora: "13:00",
         tempo: "30",
         obs: "UMA CAMERA PARADA",
+        status: "executed",
       },
       {
         client_id: 33,
@@ -4063,6 +4088,7 @@ class DatabaseSeeder {
         hora: "10:18",
         tempo: "30",
         obs: "RECEPTOR ENERGY HD ESTA SEM SINAL. ",
+        status: "executed",
       },
       {
         client_id: 35,
@@ -4073,6 +4099,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: null,
+        status: "executed",
       },
       {
         client_id: 36,
@@ -4084,6 +4111,7 @@ class DatabaseSeeder {
         tempo: "30",
         obs:
           "INSTALAR VIDEIO PORTEIRO, 2 CAMERAS E MUDAR 2 CAMERAS DE POSICAO. ",
+        status: "executed",
       },
       {
         client_id: 38,
@@ -4094,6 +4122,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "ATUALIZAR O MIDIA BOX, SEM PEGAR A GLOBO.",
+        status: "executed",
       },
       {
         client_id: 37,
@@ -4104,6 +4133,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "MOTOR ROSSI, PROBLEMA NA PLACA. ",
+        status: "executed",
       },
       {
         client_id: 43,
@@ -4114,6 +4144,7 @@ class DatabaseSeeder {
         hora: "15:00",
         tempo: "30",
         obs: "ATUALIZAR MIDIA BOX ",
+        status: "executed",
       },
       {
         client_id: 44,
@@ -4124,6 +4155,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR MOTOR DE PORTAO PIVOTANTE",
+        status: "executed",
       },
       {
         client_id: 7,
@@ -4134,6 +4166,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "CAMERAS PAROU NAS GUERRILHAS. LEVAR FONTE. ",
+        status: "executed",
       },
       {
         client_id: 45,
@@ -4144,6 +4177,7 @@ class DatabaseSeeder {
         hora: "16:00",
         tempo: "30",
         obs: "PARABOLICA SEM SINAL",
+        status: "executed",
       },
       {
         client_id: 46,
@@ -4154,6 +4188,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "FAZER CONECTOR DE REDE",
+        status: "executed",
       },
       {
         client_id: 47,
@@ -4164,6 +4199,7 @@ class DatabaseSeeder {
         hora: "08:00",
         tempo: "30",
         obs: "SEM SINAL - B2 ",
+        status: "executed",
       },
       {
         client_id: 48,
@@ -4174,6 +4210,7 @@ class DatabaseSeeder {
         hora: "13:30",
         tempo: "30",
         obs: "CAMERA PARADA A DE FRENTE A PISTA",
+        status: "executed",
       },
       {
         client_id: 49,
@@ -4184,6 +4221,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "CREMALHEIRA QUEBRADA",
+        status: "executed",
       },
       {
         client_id: 50,
@@ -4194,6 +4232,7 @@ class DatabaseSeeder {
         hora: "10:30",
         tempo: "30",
         obs: "ATUALIZAR O AZAMERICA S1007+ ",
+        status: "executed",
       },
       {
         client_id: 51,
@@ -4204,6 +4243,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "UMA CAMERA PARADA",
+        status: "executed",
       },
       {
         client_id: 30,
@@ -4214,6 +4254,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "TROCAR TX CAR DO CARRO PARA A MOTO",
+        status: "executed",
       },
       {
         client_id: 4,
@@ -4224,6 +4265,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "O MOTOR ESTÁ ABRINDO SOZINHO.",
+        status: "executed",
       },
       {
         client_id: 53,
@@ -4234,6 +4276,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "MOTOR ESTÁ TRAVADO.",
+        status: "executed",
       },
       {
         client_id: 42,
@@ -4244,6 +4287,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR MOTOR SEMI INDUSTRIAL ",
+        status: "executed",
       },
       {
         client_id: 58,
@@ -4254,6 +4298,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALACAO DE CERCA ELETRICA + CONCERTINA 30CM ",
+        status: "executed",
       },
       {
         client_id: 59,
@@ -4264,6 +4309,7 @@ class DatabaseSeeder {
         hora: "16:00",
         tempo: "30",
         obs: "ORCAMENTO CERCA ELETRICA ",
+        status: "executed",
       },
       {
         client_id: 60,
@@ -4274,6 +4320,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "OLHAR UMA CAMERA PARADA. ",
+        status: "executed",
       },
       {
         client_id: 26,
@@ -4284,6 +4331,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "MUDAR MIDIA BOX DE LOCAL",
+        status: "executed",
       },
       {
         client_id: 61,
@@ -4294,6 +4342,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "ORCAMENTO",
+        status: "executed",
       },
       {
         client_id: 63,
@@ -4304,6 +4353,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "MARCA PONTO DE CAMERAS",
+        status: "executed",
       },
       {
         client_id: 65,
@@ -4314,6 +4364,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "OLHA SINAL ",
+        status: "executed",
       },
       {
         client_id: 68,
@@ -4324,6 +4375,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "LIGAR PORTEIRO ELETRONICO",
+        status: "executed",
       },
       {
         client_id: 69,
@@ -4334,6 +4386,7 @@ class DatabaseSeeder {
         hora: "13:00",
         tempo: "30",
         obs: "OLHAR SINAL DO TOCOMBOX SOCCED HD ",
+        status: "executed",
       },
       {
         client_id: 70,
@@ -4344,6 +4397,7 @@ class DatabaseSeeder {
         hora: "13:00",
         tempo: "30",
         obs: "OLHAR SINAL DE SISTEMA KU, LEVAR LNB",
+        status: "executed",
       },
       {
         client_id: 17,
@@ -4354,6 +4408,7 @@ class DatabaseSeeder {
         hora: "15:00",
         tempo: "30",
         obs: "POSICIONAR CAMERAS ",
+        status: "executed",
       },
       {
         client_id: 72,
@@ -4364,6 +4419,7 @@ class DatabaseSeeder {
         hora: "15:00",
         tempo: "30",
         obs: "ACESSO REMOTO EM DVR, PASSAR FIO DE INTERNET",
+        status: "executed",
       },
       {
         client_id: 73,
@@ -4375,6 +4431,7 @@ class DatabaseSeeder {
         tempo: "30",
         obs:
           "MOTOR ENGANCHANDO NA PARTIDA, TALVEZ SEJA A ENGRENAGEM INTERNA, PORTAO ESTA PESADO. ",
+        status: "executed",
       },
       {
         client_id: 74,
@@ -4385,6 +4442,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "OLHAR SINAL ANTENA, FUGINDO IMAGEM. ",
+        status: "executed",
       },
       {
         client_id: 75,
@@ -4395,6 +4453,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "DUAS CAMERAS PARADAS NO CENTRO DE SAUDE",
+        status: "executed",
       },
       {
         client_id: 76,
@@ -4405,6 +4464,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR DVR COM 8 CAMERAS ",
+        status: "executed",
       },
       {
         client_id: 71,
@@ -4415,6 +4475,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR 08 CAMERAS HB TECH ",
+        status: "executed",
       },
       {
         client_id: 39,
@@ -4425,6 +4486,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "UMA CAMERA PARADA E MUDAR POSICAO DE OUTRA. ",
+        status: "executed",
       },
       {
         client_id: 79,
@@ -4435,6 +4497,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "MUDAR CAMERA DE LOCAL",
+        status: "executed",
       },
       {
         client_id: 81,
@@ -4445,6 +4508,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR CERCA ELETRICA ",
+        status: "executed",
       },
       {
         client_id: 77,
@@ -4455,6 +4519,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR MOTOR ROSSI ",
+        status: "executed",
       },
       {
         client_id: 81,
@@ -4465,6 +4530,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR 02 CAMERAS HB TECH ",
+        status: "executed",
       },
       {
         client_id: 80,
@@ -4475,6 +4541,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "LIGAR DVR NOVO HB TECH ",
+        status: "executed",
       },
       {
         client_id: 78,
@@ -4486,6 +4553,7 @@ class DatabaseSeeder {
         tempo: "30",
         obs:
           "INSTALAR MOTOR DZ ATTO ROSSI. TEM QUE SERRAR A PAREDE PRA PASSAR A CREMALHEIRA. ",
+        status: "executed",
       },
       {
         client_id: 2,
@@ -4496,6 +4564,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "FECHADURA TRAVOU",
+        status: "executed",
       },
       {
         client_id: 85,
@@ -4506,6 +4575,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "ARAME FOLGADOS, NAO ESTA DISPARANDO. ",
+        status: "executed",
       },
       {
         client_id: 84,
@@ -4516,6 +4586,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "MUDAR FIACAO DE CFTV E REVISAR A CERCA ELETRICA",
+        status: "executed",
       },
       {
         client_id: 86,
@@ -4526,6 +4597,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "KIT 4 CAMERAS DVR INTELBRAS ",
+        status: "executed",
       },
       {
         client_id: 87,
@@ -4536,6 +4608,7 @@ class DatabaseSeeder {
         hora: "16:00",
         tempo: "30",
         obs: "VIDEO PORTEIRO ESTA SEM FUNCIONAR. ",
+        status: "executed",
       },
       {
         client_id: 88,
@@ -4546,6 +4619,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "TROCAR DUAS CAMERAS E OLHAR O MOTOR DESLIZANTE. ",
+        status: "executed",
       },
       {
         client_id: 89,
@@ -4556,6 +4630,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "RETIRAR E INSTALAR EM NOVO ENDERECO TOCOMBOX ENERGY HD",
+        status: "executed",
       },
       {
         client_id: 58,
@@ -4566,6 +4641,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR MOTOR DZ ATTO",
+        status: "executed",
       },
       {
         client_id: 90,
@@ -4576,6 +4652,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR DUAS CAMERAS INTELBRAS ",
+        status: "executed",
       },
       {
         client_id: 25,
@@ -4586,6 +4663,7 @@ class DatabaseSeeder {
         hora: "12:00",
         tempo: "30",
         obs: "ESCOLA",
+        status: "executed",
       },
       {
         client_id: 92,
@@ -4596,6 +4674,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "DUAS CAMERAS PARADA, TROCAR FIO. ",
+        status: "executed",
       },
       {
         client_id: 91,
@@ -4606,6 +4685,7 @@ class DatabaseSeeder {
         hora: "14:30",
         tempo: "30",
         obs: "FONTE QUEIMADA. ",
+        status: "executed",
       },
       {
         client_id: 93,
@@ -4616,6 +4696,7 @@ class DatabaseSeeder {
         hora: "13:30",
         tempo: "30",
         obs: "FECHADURA ELETRICA SEM ABRIR NA CHAVE POR DENTRO",
+        status: "executed",
       },
       {
         client_id: 75,
@@ -4626,6 +4707,7 @@ class DatabaseSeeder {
         hora: "14:30",
         tempo: "30",
         obs: "OLHAR ANTENA PARABOLICA PARA INSTALAR 4 MIDIA BOX ",
+        status: "executed",
       },
       {
         client_id: 30,
@@ -4636,6 +4718,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR TX CAR NUMA MOTO",
+        status: "executed",
       },
       {
         client_id: 94,
@@ -4646,6 +4729,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "LIGAR RECEPTOR CINE BOX ",
+        status: "executed",
       },
       {
         client_id: 96,
@@ -4656,6 +4740,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "SINTONIZAR SINAL DA OI TV ",
+        status: "executed",
       },
       {
         client_id: 16,
@@ -4666,6 +4751,7 @@ class DatabaseSeeder {
         hora: "14:30",
         tempo: "30",
         obs: "MOTOR ROSSI - SO ABRI NAO FECHA. ",
+        status: "executed",
       },
       {
         client_id: 24,
@@ -4676,6 +4762,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR CAMERAS",
+        status: "executed",
       },
       {
         client_id: 97,
@@ -4686,6 +4773,7 @@ class DatabaseSeeder {
         hora: "10:30",
         tempo: "30",
         obs: "UMA CAMERA PARADA. ",
+        status: "executed",
       },
       {
         client_id: 98,
@@ -4696,6 +4784,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "MOTOR SEM FORCA",
+        status: "executed",
       },
       {
         client_id: 99,
@@ -4706,6 +4795,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "TV SEM FUNCIONAR. ",
+        status: "executed",
       },
       {
         client_id: 24,
@@ -4716,6 +4806,7 @@ class DatabaseSeeder {
         hora: "13:30",
         tempo: "30",
         obs: "MANUTENCAO PARABOLICAS. ",
+        status: "executed",
       },
       {
         client_id: 39,
@@ -4726,6 +4817,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "SEM AUDIO ",
+        status: "executed",
       },
       {
         client_id: 131,
@@ -4736,6 +4828,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "DVR COM PROBLEMA",
+        status: "executed",
       },
       {
         client_id: 100,
@@ -4746,6 +4839,7 @@ class DatabaseSeeder {
         hora: "14:30",
         tempo: "30",
         obs: "ALARME COM PROBLEMA",
+        status: "executed",
       },
       {
         client_id: 101,
@@ -4756,6 +4850,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "OLHAR PORTEIRO MESTRE ",
+        status: "executed",
       },
       {
         client_id: 102,
@@ -4766,6 +4861,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "INSTALAR TV ",
+        status: "executed",
       },
       {
         client_id: 103,
@@ -4776,6 +4872,7 @@ class DatabaseSeeder {
         hora: "15:300",
         tempo: "30",
         obs: "PARABOLICA.",
+        status: "executed",
       },
       {
         client_id: 104,
@@ -4786,6 +4883,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "ESTA CHAMANDO DIRETO. ",
+        status: "executed",
       },
       {
         client_id: 105,
@@ -4797,6 +4895,7 @@ class DatabaseSeeder {
         tempo: "30",
         obs:
           "INSTALAÇÃO 02 ANTENAS.                                                                             \nLEVA AS ANTENAS DA LOJA (USADAS).\nLEVA SUPORTE PARA TV",
+        status: "executed",
       },
       {
         client_id: 106,
@@ -4807,6 +4906,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "SINAL DA OI TV ",
+        status: "executed",
       },
       {
         client_id: 107,
@@ -4817,6 +4917,7 @@ class DatabaseSeeder {
         hora: "16:00",
         tempo: "30",
         obs: "OLHAR SINAL DE TV RECEPTOR CINE BOX FANTASYA DUO",
+        status: "executed",
       },
       {
         client_id: 108,
@@ -4827,6 +4928,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "REINSTALACAO NOVO ENDERECO - RETIRAR E INSTALAR. LEVAR FIO. ",
+        status: "executed",
       },
       {
         client_id: 109,
@@ -4837,6 +4939,7 @@ class DatabaseSeeder {
         hora: "08:00",
         tempo: "30",
         obs: "INSTALAR SUPORTE TV E LIGAR OS RECEPTORES. ",
+        status: "executed",
       },
       {
         client_id: 111,
@@ -4847,6 +4950,7 @@ class DatabaseSeeder {
         hora: "14:30",
         tempo: "30",
         obs: "ORCAMENTO CAMERAS E VIDEO PORTEIRO",
+        status: "executed",
       },
       {
         client_id: 110,
@@ -4858,6 +4962,7 @@ class DatabaseSeeder {
         tempo: "30",
         obs:
           "SINAL ANTENA BANDA KU - RECEPTOR EUROSAT E SINTONIZAR RECETOR ANALOGICO PARABOLICA - LEVAR CABO DE FORCA DE PC",
+        status: "executed",
       },
       {
         client_id: 25,
@@ -4868,6 +4973,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "RETIRAR CAMERAS DO POSTE DA ESCOLA. ",
+        status: "executed",
       },
       {
         client_id: 83,
@@ -4878,6 +4984,7 @@ class DatabaseSeeder {
         hora: "14:30",
         tempo: "30",
         obs: "ACESSO REMOTO E CONCLUIR O SERVICO",
+        status: "executed",
       },
       {
         client_id: 112,
@@ -4888,6 +4995,7 @@ class DatabaseSeeder {
         hora: "15:00",
         tempo: "30",
         obs: "TV SEM CONEXAO - CS",
+        status: "executed",
       },
       {
         client_id: 113,
@@ -4898,6 +5006,7 @@ class DatabaseSeeder {
         hora: "17:00",
         tempo: "30",
         obs: "CREMALHEIRA QUEBROU",
+        status: "executed",
       },
       {
         client_id: 65,
@@ -4908,6 +5017,7 @@ class DatabaseSeeder {
         hora: "10:00",
         tempo: "30",
         obs: "INSTALAR SUPORTE FIXO EM TV ",
+        status: "executed",
       },
       {
         client_id: 11,
@@ -4918,6 +5028,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "OLHA RECEPTOR CENTURY.\nRECEPTOR DO QUARTO DE RICARDO.",
+        status: "executed",
       },
       {
         client_id: 130,
@@ -4928,6 +5039,7 @@ class DatabaseSeeder {
         hora: "08:00",
         tempo: "30",
         obs: "RECEPTOR MIDIA BOX DESPROGRAMADO.",
+        status: "executed",
       },
       {
         client_id: 30,
@@ -4938,6 +5050,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "02 CAMERAS SEM PEGAR ( MERCADO).",
+        status: "executed",
       },
       {
         client_id: 116,
@@ -4949,6 +5062,7 @@ class DatabaseSeeder {
         tempo: "30",
         obs:
           "OLHAR SINAL DE ANTENA PARABOLICA EM NIM DE CHICO NESTOR NAS PLACAS - LEVAR LNB ",
+        status: "executed",
       },
       {
         client_id: 117,
@@ -4959,6 +5073,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "OLHA RECPTORES",
+        status: "executed",
       },
       {
         client_id: 64,
@@ -4969,6 +5084,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "PAROU TUDO",
+        status: "executed",
       },
       {
         client_id: 118,
@@ -4979,6 +5095,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "REVISAR GERAL, CAMERAS PARADAS. ",
+        status: "executed",
       },
       {
         client_id: 119,
@@ -4989,6 +5106,7 @@ class DatabaseSeeder {
         hora: "09:00",
         tempo: "30",
         obs: "CONFIGURAR CONTROLE REMOTO NA CENTRAL GENNO",
+        status: "executed",
       },
       {
         client_id: 121,
@@ -4999,6 +5117,7 @@ class DatabaseSeeder {
         hora: "10:30",
         tempo: "30",
         obs: "TROCAR UMA CAMERA, UMA PARADA. ",
+        status: "executed",
       },
       {
         client_id: 122,
@@ -5010,6 +5129,7 @@ class DatabaseSeeder {
         tempo: "30",
         obs:
           "DUAS CAMERAS PARADA, OLHAR MOTOR ESTA COM CREMALHEIRA QUEBRADA E VIDEO PORTEIRO PARADO. ",
+        status: "executed",
       },
       {
         client_id: 120,
@@ -5020,6 +5140,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "CAMERAS PARADAS",
+        status: "executed",
       },
       {
         client_id: 123,
@@ -5030,6 +5151,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "DUAS CAMERA PARADA",
+        status: "executed",
       },
       {
         client_id: 124,
@@ -5040,6 +5162,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR 02 ANTENAS - RECEPTOR ALPHASAT TX",
+        status: "executed",
       },
       {
         client_id: 125,
@@ -5050,6 +5173,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: null,
+        status: "executed",
       },
       {
         client_id: 126,
@@ -5060,6 +5184,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR TV\n",
+        status: "executed",
       },
       {
         client_id: 125,
@@ -5070,6 +5195,7 @@ class DatabaseSeeder {
         hora: "12:00",
         tempo: "30",
         obs: null,
+        status: "executed",
       },
       {
         client_id: 127,
@@ -5080,6 +5206,7 @@ class DatabaseSeeder {
         hora: "13:30",
         tempo: "30",
         obs: "PASSAR FIO DE TV E INTERNET",
+        status: "executed",
       },
       {
         client_id: 128,
@@ -5090,6 +5217,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAÇÃO DE CAMERAS \nLEVAR CAIXINHA SOBREPOR. ",
+        status: "executed",
       },
       {
         client_id: 129,
@@ -5100,6 +5228,7 @@ class DatabaseSeeder {
         hora: "15:00",
         tempo: "30",
         obs: null,
+        status: "executed",
       },
       {
         client_id: 130,
@@ -5110,6 +5239,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "INSTALAÇÃO PARABOLICA",
+        status: "executed",
       },
       {
         client_id: 131,
@@ -5120,6 +5250,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "MOTOR DZ NANO DA ROSSI",
+        status: "executed",
       },
       {
         client_id: 132,
@@ -5130,6 +5261,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "ORÇAMENTO MANUTENCAO SISTEMA DE CFTV",
+        status: "executed",
       },
       {
         client_id: 134,
@@ -5140,6 +5272,7 @@ class DatabaseSeeder {
         hora: "10:30",
         tempo: "30",
         obs: "SINAL ANTENA PARABOLICA RECEPTOR ANALOGICO",
+        status: "executed",
       },
       {
         client_id: 135,
@@ -5150,6 +5283,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "SINAL DA ANTENA ",
+        status: "executed",
       },
       {
         client_id: 23,
@@ -5160,6 +5294,7 @@ class DatabaseSeeder {
         hora: "16:00",
         tempo: "30",
         obs: "VER UMA TV ",
+        status: "executed",
       },
       {
         client_id: 136,
@@ -5170,6 +5305,7 @@ class DatabaseSeeder {
         hora: "08:00",
         tempo: "30",
         obs: "INSTALAR ANTENA PARABOLICA - LEVAR MULTIPONTO E DIVISOR",
+        status: "executed",
       },
       {
         client_id: 137,
@@ -5180,6 +5316,7 @@ class DatabaseSeeder {
         hora: "14:30",
         tempo: "30",
         obs: "IMA SOLTOU",
+        status: "executed",
       },
       {
         client_id: 138,
@@ -5190,6 +5327,7 @@ class DatabaseSeeder {
         hora: "16:00",
         tempo: "30",
         obs: "MOTOR BASCULANTE DISPROGRAMADO",
+        status: "executed",
       },
       {
         client_id: 75,
@@ -5200,6 +5338,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "NO CRAS.",
+        status: "executed",
       },
       {
         client_id: 140,
@@ -5210,6 +5349,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "NANO BOX SEM PEGAR ALGUNS CANAIS",
+        status: "executed",
       },
       {
         client_id: 63,
@@ -5220,6 +5360,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR MOTOR RZ RIO JET FLEX 600",
+        status: "executed",
       },
       {
         client_id: 11,
@@ -5230,6 +5371,7 @@ class DatabaseSeeder {
         hora: "15:00",
         tempo: "30",
         obs: "NA CASA DO PAI DE RICARDO\n",
+        status: "executed",
       },
       {
         client_id: 139,
@@ -5240,6 +5382,7 @@ class DatabaseSeeder {
         hora: "07:30",
         tempo: "30",
         obs: null,
+        status: "executed",
       },
       {
         client_id: 74,
@@ -5250,6 +5393,7 @@ class DatabaseSeeder {
         hora: "10:19",
         tempo: "30",
         obs: "OLHAR ANTENA",
+        status: "executed",
       },
       {
         client_id: 30,
@@ -5260,6 +5404,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR ANTENA NO SITIO",
+        status: "executed",
       },
       {
         client_id: 141,
@@ -5270,6 +5415,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "UMA CAMERA PARADA",
+        status: "executed",
       },
       {
         client_id: 109,
@@ -5280,6 +5426,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "RECEPTOR SEM SINAL",
+        status: "executed",
       },
       {
         client_id: 126,
@@ -5291,6 +5438,7 @@ class DatabaseSeeder {
         tempo: "30",
         obs:
           "TELEVISÃO DO CLIENTE ESTÁ PEGANDO APENAS 04 CAMERAS, ELE QUER QUE PEGUE AS 05 CAMERAS.",
+        status: "executed",
       },
       {
         client_id: 142,
@@ -5301,6 +5449,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "OLHAR AMBIENTE PARA INSTALAR SISTEMA DE CFTV",
+        status: "executed",
       },
       {
         client_id: 143,
@@ -5311,6 +5460,7 @@ class DatabaseSeeder {
         hora: "14:30",
         tempo: "30",
         obs: "ORÇAMENTO CAMERAS",
+        status: "executed",
       },
       {
         client_id: 144,
@@ -5321,6 +5471,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "ALGUMAS CAMERAS PARADAS. ",
+        status: "executed",
       },
       {
         client_id: 24,
@@ -5331,6 +5482,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR AS CAMERAS QUE FALTA E O SISTEMA DE ALARME",
+        status: "executed",
       },
       {
         client_id: 145,
@@ -5341,6 +5493,7 @@ class DatabaseSeeder {
         hora: "15:30",
         tempo: "30",
         obs: "LIGAR RECEPTOR TV ",
+        status: "executed",
       },
       {
         client_id: 81,
@@ -5351,6 +5504,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "COLOCAR CENTRAL DE CHOQUE E AJEITAR UM ARAME QUE FOLGOU. ",
+        status: "executed",
       },
       {
         client_id: 27,
@@ -5361,6 +5515,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "COLOCAR PLACA NO MOTOR DO PORTAO",
+        status: "executed",
       },
       {
         client_id: 146,
@@ -5371,6 +5526,7 @@ class DatabaseSeeder {
         hora: "15:30",
         tempo: "30",
         obs: "OLHAR MOTOR DE PORTAO",
+        status: "executed",
       },
       {
         client_id: 147,
@@ -5381,6 +5537,7 @@ class DatabaseSeeder {
         hora: "13:00",
         tempo: "30",
         obs: "ATUALIZAR MIDIA BOX PEGAR A GLOBO",
+        status: "executed",
       },
       {
         client_id: 101,
@@ -5391,6 +5548,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "OLHAR PORTAO PARA INSTALAR MOTOR",
+        status: "executed",
       },
       {
         client_id: 148,
@@ -5401,6 +5559,7 @@ class DatabaseSeeder {
         hora: "09:00",
         tempo: "30",
         obs: "ORCAMENTO SISTEMA DE CAMERAS",
+        status: "executed",
       },
       {
         client_id: 149,
@@ -5411,6 +5570,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "UMA CAMERA PAROU",
+        status: "executed",
       },
       {
         client_id: 150,
@@ -5421,6 +5581,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "DUAS CAMERAS PARADA",
+        status: "executed",
       },
       {
         client_id: 124,
@@ -5431,6 +5592,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR NANO BOX NO SAO DIOGO",
+        status: "executed",
       },
       {
         client_id: 152,
@@ -5441,6 +5603,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "TRANSFERENCIA DE ANTENA",
+        status: "executed",
       },
       {
         client_id: 35,
@@ -5451,6 +5614,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "CONFIGURAR CONTROLE ROSSI",
+        status: "executed",
       },
       {
         client_id: 153,
@@ -5461,6 +5625,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "UMA CÂMERA PARADA",
+        status: "executed",
       },
       {
         client_id: 131,
@@ -5471,6 +5636,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR MOTOR DZ NANO",
+        status: "executed",
       },
       {
         client_id: 30,
@@ -5481,6 +5647,7 @@ class DatabaseSeeder {
         hora: "16:00",
         tempo: "30",
         obs: "LIGAR RECEPTOR",
+        status: "executed",
       },
       {
         client_id: 155,
@@ -5491,6 +5658,7 @@ class DatabaseSeeder {
         hora: "13:00",
         tempo: "30",
         obs: "OLHAR INTERFONE, VER SE DA CERTO PRA INSTALAR UM NOVO",
+        status: "executed",
       },
       {
         client_id: 156,
@@ -5501,6 +5669,7 @@ class DatabaseSeeder {
         hora: "13:00",
         tempo: "30",
         obs: "OLHAR MOTOR DE PORTAO, SO ESTA INDO PRA UM LADO. ",
+        status: "executed",
       },
       {
         client_id: 157,
@@ -5511,6 +5680,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "SENSOR FIM DE CURSO",
+        status: "executed",
       },
       {
         client_id: 3,
@@ -5521,6 +5691,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "UMA CAMERA SEM PEGAR",
+        status: "executed",
       },
       {
         client_id: 154,
@@ -5532,6 +5703,7 @@ class DatabaseSeeder {
         tempo: "30",
         obs:
           "LEVAR FIO, FONTE COLMEIA, FIO DE INTERNET, CONECTORE CAIXA SOBREPOR. ",
+        status: "executed",
       },
       {
         client_id: 158,
@@ -5542,6 +5714,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "VER SE O HD ESTÁ GRAVANDO",
+        status: "executed",
       },
       {
         client_id: 159,
@@ -5552,6 +5725,7 @@ class DatabaseSeeder {
         hora: "08:00",
         tempo: "30",
         obs: "DVR FAZENDO ZUADA ",
+        status: "executed",
       },
       {
         client_id: 160,
@@ -5562,6 +5736,7 @@ class DatabaseSeeder {
         hora: "13:00",
         tempo: "30",
         obs: "ATUALIZAR AZAMERICA S1005",
+        status: "executed",
       },
       {
         client_id: 161,
@@ -5572,6 +5747,7 @@ class DatabaseSeeder {
         hora: "13:30",
         tempo: "30",
         obs: "INSTALAR ANTENA USADA SKY",
+        status: "executed",
       },
       {
         client_id: 1,
@@ -5582,6 +5758,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "CAMERA DA ENTRADA PARADA",
+        status: "executed",
       },
       {
         client_id: 101,
@@ -5592,6 +5769,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR MOTOR DZ ATTO ROSSI",
+        status: "executed",
       },
       {
         client_id: 27,
@@ -5602,6 +5780,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "MOTOR PAROU. ",
+        status: "executed",
       },
       {
         client_id: 11,
@@ -5613,6 +5792,7 @@ class DatabaseSeeder {
         tempo: "30",
         obs:
           "MANUTENÇÃO NAS CÂMERAS DO VARANDA\nLIGAR ANTES DE IR PARA SABER SE DÁ CERTO, POIS O MESMO ESTÁ PASSANDO POR MANUTENÇÃO(LIMPEZA)\n",
+        status: "executed",
       },
       {
         client_id: 162,
@@ -5623,6 +5803,7 @@ class DatabaseSeeder {
         hora: "15:30",
         tempo: "30",
         obs: "INSTALAÇÃO DE  ANTENA KU.\nRECPTOR: AZAMERICA CHANPION .",
+        status: "executed",
       },
       {
         client_id: 163,
@@ -5633,6 +5814,7 @@ class DatabaseSeeder {
         hora: "16:30",
         tempo: "30",
         obs: "ATUALIZAR RECEPTOR E FAZER BUSCA DO BBB",
+        status: "executed",
       },
       {
         client_id: 85,
@@ -5643,6 +5825,7 @@ class DatabaseSeeder {
         hora: "15:00",
         tempo: "30",
         obs: "ORCAMENTO SISTEMA DE CAMERAS E MANUTENCAO EM PORTAO",
+        status: "executed",
       },
       {
         client_id: 124,
@@ -5653,6 +5836,7 @@ class DatabaseSeeder {
         hora: "13:00",
         tempo: "30",
         obs: "SINAL ANTENA",
+        status: "executed",
       },
       {
         client_id: 116,
@@ -5663,6 +5847,7 @@ class DatabaseSeeder {
         hora: "13:00",
         tempo: "30",
         obs: "INSTALAR SISTEMA 01 ANTENA EM SAO JOAO BOSCO",
+        status: "executed",
       },
       {
         client_id: 164,
@@ -5673,6 +5858,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR SISTEMA DE CFTV INTELBRAS",
+        status: "executed",
       },
       {
         client_id: 165,
@@ -5683,6 +5869,7 @@ class DatabaseSeeder {
         hora: "16:00",
         tempo: "30",
         obs: "CONTROLE REMOTO SEM PEGAR",
+        status: "executed",
       },
       {
         client_id: 71,
@@ -5693,6 +5880,7 @@ class DatabaseSeeder {
         hora: "09:00",
         tempo: "30",
         obs: "INSTALAR PORTEIRO ELETRONICO",
+        status: "executed",
       },
       {
         client_id: 166,
@@ -5703,6 +5891,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "ANTENA PARABOLICA SEM SINAL",
+        status: "executed",
       },
       {
         client_id: 30,
@@ -5713,6 +5902,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "OLHAR CAMERAS NO MERCADO ",
+        status: "executed",
       },
       {
         client_id: 167,
@@ -5723,6 +5913,7 @@ class DatabaseSeeder {
         hora: "13:00",
         tempo: "30",
         obs: "MOTOR ROSSI PARADO ",
+        status: "executed",
       },
       {
         client_id: 142,
@@ -5733,6 +5924,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "CAMERAS PARADA",
+        status: "executed",
       },
       {
         client_id: 163,
@@ -5743,6 +5935,7 @@ class DatabaseSeeder {
         hora: "16:00",
         tempo: "30",
         obs: "TROCAR TV DE LOCAL ",
+        status: "executed",
       },
       {
         client_id: 35,
@@ -5753,6 +5946,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "BOTAR ISOLADOR NA PAREDE PRA NAO PASSAR RATO",
+        status: "executed",
       },
       {
         client_id: 26,
@@ -5763,6 +5957,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: null,
+        status: "executed",
       },
       {
         client_id: 60,
@@ -5773,6 +5968,7 @@ class DatabaseSeeder {
         hora: "17:00",
         tempo: "30",
         obs: "CERCA SOLTANDO FAISCA",
+        status: "executed",
       },
       {
         client_id: 98,
@@ -5783,6 +5979,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "CAMERA DE FORA COM MAL CONTATO, MUDANDO DE COR. ",
+        status: "executed",
       },
       {
         client_id: 113,
@@ -5793,6 +5990,7 @@ class DatabaseSeeder {
         hora: "10:00",
         tempo: "30",
         obs: "TROCAR CREMALHEIRA",
+        status: "executed",
       },
       {
         client_id: 168,
@@ -5803,6 +6001,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "MOTOR ESTA PULANDO, TALVEZ SEJA PROBLEMA NA CREMALHEIRA",
+        status: "executed",
       },
       {
         client_id: 85,
@@ -5814,6 +6013,7 @@ class DatabaseSeeder {
         tempo: "30",
         obs:
           "INSTALAR DUAS CAMERAS EXTERNAS INTELBRAS NA CASA NA RUA DE NAILTON DA TAPECARIA. ",
+        status: "executed",
       },
       {
         client_id: 111,
@@ -5825,6 +6025,7 @@ class DatabaseSeeder {
         tempo: "30",
         obs:
           "RETIRAR CENTRAL DE CHOQUE PARA FAZER TESTE - ESTA DIPARANDO TODO DIA AS 6;00 DA MANHA. ",
+        status: "executed",
       },
       {
         client_id: 1,
@@ -5835,6 +6036,7 @@ class DatabaseSeeder {
         hora: "13:00",
         tempo: "30",
         obs: "OLHAR INTERFONE DA ENTRADA QUE TA PARADO, LEVAR UM NOVO. ",
+        status: "executed",
       },
       {
         client_id: 169,
@@ -5845,6 +6047,7 @@ class DatabaseSeeder {
         hora: "08:00",
         tempo: "30",
         obs: "RECEPTOR ANALOGICO",
+        status: "executed",
       },
       {
         client_id: 170,
@@ -5855,6 +6058,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "PARABOLICA SEM SINAL",
+        status: "executed",
       },
       {
         client_id: 171,
@@ -5865,6 +6069,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "REVISAR CERCA ELETRICA E CAMERAS ",
+        status: "executed",
       },
       {
         client_id: 172,
@@ -5875,6 +6080,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR ANTENA PARABOLICA ",
+        status: "executed",
       },
       {
         client_id: 173,
@@ -5885,6 +6091,7 @@ class DatabaseSeeder {
         hora: "08:00",
         tempo: "30",
         obs: "DEIXAR 02 CONTROLES DO MOTOR",
+        status: "executed",
       },
       {
         client_id: 25,
@@ -5895,6 +6102,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "INSTALAR 02 CAMERAS DA ESCOLA",
+        status: "executed",
       },
       {
         client_id: 98,
@@ -5905,6 +6113,7 @@ class DatabaseSeeder {
         hora: "10:00",
         tempo: "30",
         obs: "RESETAR SENHA DO DVR DA CASA DELA ",
+        status: "executed",
       },
       {
         client_id: 81,
@@ -5915,6 +6124,7 @@ class DatabaseSeeder {
         hora: "08:00",
         tempo: "30",
         obs: null,
+        status: "executed",
       },
       {
         client_id: 174,
@@ -5925,6 +6135,7 @@ class DatabaseSeeder {
         hora: "10:00",
         tempo: "30",
         obs: "OLHAR MIDIA BOX ",
+        status: "executed",
       },
       {
         client_id: 175,
@@ -5935,6 +6146,7 @@ class DatabaseSeeder {
         hora: "08:00",
         tempo: "30",
         obs: "DVR 08 CANAL COM 04 CAMERAS 02 DOME E 2 BULLET ",
+        status: "executed",
       },
       {
         client_id: 24,
@@ -5945,6 +6157,7 @@ class DatabaseSeeder {
         hora: "08:00",
         tempo: "30",
         obs: "DUAS CAMERAS PARADAS",
+        status: "executed",
       },
       {
         client_id: 19,
@@ -5955,6 +6168,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "INSTALAR 02 CAMERAS MIBO IP ",
+        status: "executed",
       },
       {
         client_id: 163,
@@ -5965,6 +6179,7 @@ class DatabaseSeeder {
         hora: "08:00",
         tempo: "30",
         obs: "TV DA CASA DE JAILMA TA SEM PEGAR - LIGAR PRA PETA ",
+        status: "executed",
       },
       {
         client_id: 176,
@@ -5975,6 +6190,7 @@ class DatabaseSeeder {
         hora: "08:00",
         tempo: "30",
         obs: "MOTOR ESTA TRAVANDO AO FECHAR. ",
+        status: "executed",
       },
       {
         client_id: 27,
@@ -5985,6 +6201,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "TROCAR PLACA DO MOTOR PPA DZ HOME ",
+        status: "executed",
       },
       {
         client_id: 164,
@@ -5995,6 +6212,7 @@ class DatabaseSeeder {
         hora: "09:00",
         tempo: "30",
         obs: "VER LOCAL PARA INSTALAR CAMERAS ",
+        status: "executed",
       },
       {
         client_id: 177,
@@ -6005,6 +6223,7 @@ class DatabaseSeeder {
         hora: "13:00",
         tempo: "30",
         obs: "MOTOR TA PARTINDO E NAO ABRI",
+        status: "executed",
       },
       {
         client_id: 178,
@@ -6015,6 +6234,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "SINAL DA OI TV ",
+        status: "executed",
       },
       {
         client_id: 179,
@@ -6025,6 +6245,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "ORÇAMENTO CERCA ELETRICA COM CONCERTINA",
+        status: "executed",
       },
       {
         client_id: 32,
@@ -6035,6 +6256,7 @@ class DatabaseSeeder {
         hora: "09:00",
         tempo: "30",
         obs: "LIGAR CAMERA",
+        status: "executed",
       },
       {
         client_id: 34,
@@ -6045,6 +6267,7 @@ class DatabaseSeeder {
         hora: "08:00",
         tempo: "30",
         obs: "CENTRAL NAO TA PEGANDO. ",
+        status: "executed",
       },
       {
         client_id: 10,
@@ -6055,6 +6278,7 @@ class DatabaseSeeder {
         hora: "08:30",
         tempo: "30",
         obs: "COLOCAR BATERIA NA CENTRAL",
+        status: "executed",
       },
       {
         client_id: 180,
@@ -6065,6 +6289,7 @@ class DatabaseSeeder {
         hora: "10:00",
         tempo: "30",
         obs: "ORCAMENTO MANUTENCAO DE CAMERAS ",
+        status: "executed",
       },
       {
         client_id: 181,
@@ -6076,6 +6301,7 @@ class DatabaseSeeder {
         tempo: "30",
         obs:
           "INSTALAR CAMERAS NA FABRICA - ARRUMAR CASCATA DO DVR 16 CANAL COM ALBERTO",
+        status: "executed",
       },
       {
         client_id: 182,
@@ -6086,6 +6312,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "LIGAR AS TVS QUE CHEGOU DO CONSERTO",
+        status: "executed",
       },
       {
         client_id: 183,
@@ -6096,6 +6323,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "REFLETOR PAROU DE FUNCIONAR NO LEITE ",
+        status: "executed",
       },
       {
         client_id: 13,
@@ -6106,6 +6334,7 @@ class DatabaseSeeder {
         hora: "14:00",
         tempo: "30",
         obs: "DUAS CAMERAS PARADAS",
+        status: "executed",
       },
       {
         client_id: 30,
@@ -6116,6 +6345,7 @@ class DatabaseSeeder {
         hora: "17:00",
         tempo: "30",
         obs: "TROCAR DE CÂMERA.\nTIRA CAMERA ZIRON DA LOJA É FAZER A TROCAR.",
+        status: "executed",
       },
     ]);
   }

@@ -37,6 +37,7 @@ Route.group(() => {
 
 Route.group(() => {
   Route.resource("ordens_service", "OrdensServiceController").apiOnly();
+  Route.put("ordens_service/status/:id","OrdensServiceController.update_status")
 }).middleware("auth");
 
 Route.group(() => {
