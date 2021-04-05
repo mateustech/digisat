@@ -216,6 +216,7 @@ CREATE TABLE public.ordens_services (
     hora character varying(255),
     tempo character varying(255),
     obs character varying(255),
+    status character varying(255),
     created_at timestamp with time zone,
     updated_at timestamp with time zone
 );
